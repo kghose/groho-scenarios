@@ -1,0 +1,15 @@
+; We can use this to demonstrate simulation stability issues
+; For example, a time step of 60 yields poor results with 
+; euler integration (e0d0fd7184115)
+; but good results with velocity vertlet
+; euler requires a time step of 1 for similar results
+
+start 2220.01.01:0.5
+end 2220.01.03:0.5
+dt 60
+; dt 1
+
+spk ../de435.bsp
+
+plan Terra I
+orbiting 399 100x100
