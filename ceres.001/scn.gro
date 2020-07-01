@@ -1,0 +1,13 @@
+; A ship orbiting Ceres
+
+start 2220.01.01:0.5
+end   2220.01.13:0.5
+dt    60
+
+spk ../de435.bsp
+
+pick 2000001
+spk  ../ast343de430.bsp
+
+plan Rainbow 
+orbiting 2000001 10x10
